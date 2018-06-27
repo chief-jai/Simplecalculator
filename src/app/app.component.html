@@ -1,0 +1,44 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<br>
+		<hr>
+		<h3 align="center">Simple calculator</h3>
+		<hr>
+		<div class="container">
+
+			<form class="calc" ng-controller="MyCtrl">
+		    <p class="calc-display">
+		      <input type="text" name="output" id="res" value="{{output}}" class="calc-display-input">
+		    </p>
+		    <p class="operators">
+		      <button type="button" class="calc-button calc-button-red calc-button-big" (click)='operate("/")' >/</button>
+		      <button type="button" class="calc-button calc-button-red calc-button-big" (click)='operate("*")' >x</button>
+		      <button type="button" class="calc-button calc-button-red calc-button-big" (click)='operate("-")' >-</button>
+		      <button type="button" class="calc-button calc-button-red calc-button-big" (click)='operate("+")' >+</button>
+		    </p>
+		    <p class="calc-row">
+		      <button type="button" class="calc-button" (click)="updateOutput('7')">7</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('8')">8</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('9')">9</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('4')">4</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('5')">5</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('6')">6</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('1')">1</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('2')">2</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('3')">3</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('0')">0</button>
+		      <button type="button" class="calc-button" (click)="updateOutput('.')">.</button>
+		      <button type="button" class="calc-button" (click)="clear()">C</button>
+
+		    </p>
+		    <p class="calc-row">
+					<button type="button" class="calc-button calc-button-yellow calc-button-big" (click)="equal()">=</button>
+				</p>
+		  </form>
+		</div>
+		<br>
+		<br>
+	</body>
+</html>
