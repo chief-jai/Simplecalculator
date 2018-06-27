@@ -11,7 +11,7 @@ Run `npm install` to install all the dependencies that are required.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-##Node Deployment
+## Node Deployment
 
 If the packages express and nodemon are not installed beforehand, then install them as,
 
@@ -19,7 +19,7 @@ npm install express --save
 
 npm install -g nodemon
 
-##Build
+## Build
 
 after installing nodemon build the Angular project as,
 
